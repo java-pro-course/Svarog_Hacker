@@ -116,9 +116,6 @@ HashSet<String> users = new HashSet<String>();
         System.out.println("Лайки могут ставить "+ users);
         System.out.println("Банить могут " + admins);
         
-ee56675b password yes mam
-
-
 
 
 
