@@ -1,0 +1,555 @@
+выйти из vim = qa! + enter
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
+      
+      
+    }
+}
+
+
+chess 7 next
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+     //Код
+    }
+}
+
+
+Дискретная математика
+
+Дискретность - прерывность
+
+АЦП-устройство преобразуещее входной аналоговый сигнал в дискретный код(цифровой сигнал)
+
+ЦАП-устройсво для преобразования цифрового кода в аналоговый сигнал.
+
+
+Типы данных и переменные! (Тема)
+
++ складывать
+- вычитать 
+* умножать
+/ делить
+% остаток от деления
+
+Система счисления - метод записи чисел. представление чисел с помощью письменных знаков
+
+Основание системы счисления - количество символов в ней.
+
+
+Системы счисления__----->Позиционные  - положение чисел определяется его весом.
+                   ----->Непозиционные - позиция не зависит от веса
+
+
+
+ветвление
+
+> больше
+>= больше или ровно
+< меньше
+<= меньше или ровно
+== проверка на равенство
+=! проверка на неравенство
+&& логическое И
+|| логическое ИЛИ
+! логическое НЕ
+
+
+Подтема счётчики
+
+
+
+
+
+Теория множеств
+
+Массивы 
+
+
+
+имя массива.length - узнать длинну массива
+
+
+HashSet<Integer> mySet = new HashSet<Integer>();
+        mySet.add(15);
+        mySet.add(17);
+        mySet.add(19);
+
+        for (int i : mySet) {
+            System.out.println(i);
+        }
+        System.out.println(mySet.contains(17));
+
+        System.out.println(mySet.size());
+        System.out.println(mySet.isEmpty());
+        mySet.clear();
+        System.out.println(mySet.isEmpty());
+
+
+аа
+
+HashSet<String> users = new HashSet<String>();
+        users.add("Kamill");
+        users.add("Timur");
+        users.add ("Topchick");
+        users.add("Alina");
+
+        HashSet<String> admins = new HashSet<String>();
+        users.add("Kamill");
+        users.add("Timur");
+
+        HashSet<String> mod = new HashSet<String>();
+        users.addAll(admins);
+
+        HashSet<String> errorAdmin = new HashSet<String>();
+        errorAdmin.addAll(admins);
+        errorAdmin.removeAll(admins);
+
+        System.out.println("Лайки могут ставить "+ users);
+        System.out.println("Банить могут " + admins);
+        
+ee56675b password yes mam
+
+
+
+
+
+
+
+
+
+
+
+Методы
+
+
+
+
+
+
+[модификаторы] тип_результата название_метода ([аргументы]){
+
+}
+
+public static int sum(int a, int b){
+	return a + b;// вытаскиваем оттуда а + b
+}
+
+
+Тип результата
+
+void - метод не возвращающий значения
+
+int
+boolean
+long
+short
+int[]
+String
+String[]
+и т. п.
+
+Аргументы
+aaaааа
+
+{} - отсутствие аргументов
+
+
+int
+boolean
+long
+short
+int[]
+String
+String[]
+и т. п.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Форматы данных - это курс, изучающий структуру, устройство. специализацию различных представлений информации
+
+
+Текст - .txt odg
+
+
+Архиваторы - .zip .rar .ods
+
+Аудио  - .mp3 .mp4 .m4a .ogg
+
+
+Видео - .avi .vob .mov 
+
+Фото - .kra .tga .jpg .png .jpeg
+
+
+Тип файла - это информация для индетификации
+
+Расширение - это индефикатор формата файла
+
+Спецификации - это правила для типа файла
+
+Метаданные - это информация о файле
+
+Исполняемые файлы(Например exif)  - это 
+
+
+
+
+
+
+
+
+*****************************************
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+  /*      int n = in.nextInt();
+        int r = 1;
+        for (int i = 1; i <= n; i++) {
+            r *= i;
+        }
+        System.out.println(r);*/
+
+        int n = in.nextInt();
+        System.out.println(getFact(n));
+    }
+
+
+
+    public static int getFact(int n){
+        if(n <= 1)
+            return 1;
+        else
+            return n * getFact(n-1);
+    }
+
+}
+
+
+
+/*
+
+Необходимо найти факториал числа n.
+
+n! = 1 * 2 * 3 * 4 * 5 * ... * n
+
+5! = 1 * 2 * 3 * 4 * 5 = 120
+
+
+
+Рекурсия (getFact)
+ */
+
+
+
+*****************************************
+
+
+
+//это ООП
+//Dog - шаблон для создания собаки
+
+class Dog{
+	int age;
+	String name;
+	String breed;
+	int height;
+}
+
+
+Dog [название] = new Dog([Возраст собаки], "Имя", "Порода", [Рост]);// А это я уже создал собаку по образцу
+
+
+
+
+
+
+//Строки
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        String name = "Egor";
+        //String - неизменяемый тип
+        name = "Ilya";
+        String word = new String();
+        //Преобразование массива символов в строку
+        String hello = new String(new char[] {'h', 'e', 'l', 'l', 'o'});
+        System.out.println(hello);
+        String friends = new String(new char[] {'h', 'e', 'l', 'l', 'o', 'f', 'r', 'i', 'e', 'n', 'd', 's'}, 5, 7);
+        System.out.println(friends);
+        //Преобразование строки в массив символов
+        char[] symbols = name.toCharArray();
+        System.out.println(symbols);
+        //Преобразование чисел в строку
+        String[] numbers = in.nextLine().split(" ");
+        for (String chr : numbers)
+            System.out.println(chr);
+        //Количество символов в строке
+        String random = "Hello";
+        System.out.println(random.length());
+        //Перевод в верхний или нижний регистр
+        String myName = "KAMILL".toLowerCase(Locale.ROOT);
+        System.out.println(myName);
+        //
+        String myTitle = "ksd".toUpperCase(Locale.ROOT);
+        System.out.println(myTitle);
+        //Перевернуть строку
+        char[] line = in.nextLine().toCharArray();
+        for (int i = line.length - 1;i >= 0;i--){
+            System.out.print(line[i]);
+        }
+
+    }
+}
+
+//
+Scanner in = new Scanner(System.in);
+        String s1 = "Hello";
+        String s2 = "my friends";
+//        String s3 = s1 + s2;
+//        String s3 = s1.concat(s2);
+        String s4 = String.join(" ", s1, s2);
+//        System.out.println(s4);
+        // получение символа строки с заданным индексом
+        char c = s1.charAt(2);
+//        System.out.println(c);
+        // Проверка цифра ли этот символ
+//        System.out.println(Character.isDigit('1'));
+        // Проверка буква ли этот символ
+//         System.out.println(Character.isLetter(''));
+
+        String lol = in.nextLine();
+        char[] lols = lol.toCharArray();
+//        int digit = 0;
+//        int letter = 0;
+//        int sth = 0;
+//        for (int i = 0; i < lol.length(); i++) {
+//            if(Character.isDigit(lols[i])){
+//                digit++;
+//            }else if (Character.isLetter(lols[i])) {
+//                letter++;
+//            }else{
+//                sth++;
+//            }
+//        }
+//        System.out.println("Букв: " + letter);
+//        System.out.println("Цифр: " + digit);
+//        System.out.println("Другие символы: " + sth);
+//        String[] s = lol.split(" ");
+//        System.out.println(s[s.length - 2]);
+
+
+
+//
+ArrayList
+ArrayList<String> stud = new ArrayList<>(16);
+        //Добавление элемента
+        stud.add("Роман");
+        stud.add("Камиль");
+        stud.add("Егор");
+        //Удаление элемента по содержимому
+        stud.remove("Егор");
+        //Удаление элемента по номеру
+        stud.remove(1);
+        //Проверка на содержание элемента
+     //   System.out.println(stud.contains("Роман"));
+        //Устанавливаем величину списка
+        stud.ensureCapacity(16);
+        //Узнаём номер элемента по названию
+        System.out.println(stud.indexOf("Камиль"));
+        //Узнаём название по номеру
+        System.out.println(stud.get(1));
+        //Меняем определённый элемент
+        stud.set(0, "ИМЯ НЕИЗВЕСТНО!!");
+        //Проверка списка на пустоту
+        System.out.println(stud.isEmpty());
+        //Очищение списка
+        stud.clear();
+        //Перевод из строки в ArrayList
+        String[] strings = stud.toArray(new String[0]);
+
+
+Множества
+	HashSet<Integer> numbers = new HashSet<>();
+        HashSet<Integer> n = new HashSet<>();
+        //Добавление элементов
+        numbers.add(1);
+        n.add(2);
+        numbers.add(9);
+        n.add(16);
+        //Удаление элементов
+        numbers.remove(1);
+        numbers.remove(2);
+        //Удаление всех элементов
+        numbers.clear();
+        //Проверка на пустоту
+        System.out.println(numbers.isEmpty());
+        //Узнаём размер множества
+        System.out.println(numbers.size());
+        //Добавление всех элементов из другово множества
+        numbers.addAll(n);
+
+//Все действия с множествами
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int n1 = in.nextInt();
+        int n2 = in.nextInt();
+        HashSet s1 = new HashSet<Integer>();
+        HashSet s2 = new HashSet<Integer>();
+        for (var i = 0; i < n1; i++){
+            s1.add(in.nextInt());
+        }
+        for (var i = 0; i < n2; i++){
+            s2.add(in.nextInt());
+        }
+        System.out.println(intersection(s1, s2));
+        System.out.println(union(s1, s2));
+        System.out.println(difference(s1, s2));
+        System.out.println(symmetricDifference(s1, s2));
+    }
+
+    private static HashSet symmetricDifference(HashSet<Integer> s1, HashSet<Integer> s2) {
+        HashSet<Integer> intSec = new HashSet<Integer>();
+        for (int i : s1) {
+            if(!s2.contains(i)){
+                intSec.add(i);
+            }
+        }
+        for (int i : s2) {
+            if(!s1.contains(i)){
+                intSec.add(i);
+            }
+        }
+        return intSec;
+    }
+
+    private static HashSet difference(HashSet<Integer> s1, HashSet<Integer> s2) {
+        HashSet<Integer> intSec = new HashSet<Integer>();
+        for (int i : s1) {
+            if(!s2.contains(i)){
+                intSec.add(i);
+            }
+        }
+        return intSec;
+    }
+
+    private static HashSet union(HashSet<Integer> s1, HashSet<Integer> s2) {
+        HashSet<Integer> intSec = new HashSet<Integer>();
+        intSec.addAll(s1);
+        intSec.addAll(s2);
+        return intSec;
+    }
+
+    private static HashSet intersection(HashSet<Integer> s1, HashSet<Integer> s2) {
+        HashSet<Integer> intSec = new HashSet<Integer>();
+        for (int i : s1) {
+            if(s2.contains(i)){
+                intSec.add(i);
+            }
+        }
+        return intSec;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38 страница англ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Что будем делать 
+
+1 ООП
+2 Spring Boot чё-то бомбовое)
+3 Коммандные проекты
+4 Инструменты git an DevOps
+5 Простые api
+6 Коммандный проект
+7 DevOps
+8 Front-end
+
+
+
+
+
+
+
+
+
+
+
+SSH-ключи
+Удалённое подключение к репозиторию
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIP0AgDCXy9cgqdZihYvuUWajjq65ixbSK1HJF+9gLAU (мой)
+
+
+
